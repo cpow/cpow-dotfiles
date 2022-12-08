@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'bluz71/vim-nightfly-colors'
   use 'vim-test/vim-test'
+  use 'lewis6991/gitsigns.nvim'
+
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
