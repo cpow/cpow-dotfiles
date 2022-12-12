@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
   use 'bluz71/vim-nightfly-colors'
   use 'vim-test/vim-test'
   use 'lewis6991/gitsigns.nvim'
+  use 'preservim/vimux'
+  use 'christoomey/vim-tmux-navigator'
+  use 'github/copilot.vim'
 
   use {
     "williamboman/mason.nvim",
