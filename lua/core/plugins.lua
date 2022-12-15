@@ -23,7 +23,12 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'preservim/vimux'
   use 'christoomey/vim-tmux-navigator'
-  use 'github/copilot.vim'
+  -- completion
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use "rafamadriz/friendly-snippets"
 
   use {
     "williamboman/mason.nvim",
