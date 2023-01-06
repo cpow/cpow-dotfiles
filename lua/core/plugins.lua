@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use "rafamadriz/friendly-snippets"
 
+  use "github/copilot.vim"
+
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
