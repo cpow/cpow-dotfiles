@@ -35,7 +35,9 @@ return require('packer').startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    "glepnir/lspsaga.nvim",
   }
+
   use {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
