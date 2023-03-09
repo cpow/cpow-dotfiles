@@ -1,6 +1,4 @@
-require("mason-lspconfig").setup({
-  ensure_installed = { "sumneko_lua", "solargraph" }
-})
+require("mason-lspconfig").setup()
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
@@ -20,7 +18,7 @@ vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', { silent = true })
 vim.keymap.set({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>", { silent = true })
 vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { silent = true })
 
-require("lspconfig").sumneko_lua.setup {
+require("lspconfig").lua_ls.setup {
   capabilities = capabilities,
   settings = {
     Lua = {
@@ -38,5 +36,9 @@ require("lspconfig").sumneko_lua.setup {
 }
 
 require("lspconfig").solargraph.setup {
+  capabilities = capabilities,
+}
+
+require("lspconfig").pyright.setup {
   capabilities = capabilities,
 }
