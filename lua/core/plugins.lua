@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   'wbthomason/packer.nvim',
   'ellisonleao/gruvbox.nvim',
+  'rebelot/kanagawa.nvim',
   {
     'dracula/vim',
     lazy = false,
@@ -28,6 +29,13 @@ local plugins = {
   'preservim/vimux',
   'christoomey/vim-tmux-navigator',
   'tpope/vim-fugitive',
+  'tpope/vim-commentary',
+
+  -- debugging
+  'mfussenegger/nvim-dap',
+  'rcarriga/nvim-dap-ui',
+  'simrat39/rust-tools.nvim',
+
   -- completion
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
