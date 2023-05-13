@@ -31,7 +31,7 @@ local plugins = {
   'tpope/vim-fugitive',
   'tpope/vim-commentary',
 
-  -- debugging
+  -- rust babyyyyyyy
   'mfussenegger/nvim-dap',
   'rcarriga/nvim-dap-ui',
   'simrat39/rust-tools.nvim',
