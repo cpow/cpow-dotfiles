@@ -31,6 +31,7 @@ require("lspconfig").lua_ls.setup {
 require("lspconfig").solargraph.setup({})
 require("lspconfig").tsserver.setup({})
 require("lspconfig").gopls.setup({})
+require("lspconfig").tailwindcss.setup({})
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
